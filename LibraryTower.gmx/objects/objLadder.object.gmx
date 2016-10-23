@@ -34,6 +34,8 @@ right = x + 288;
 tracking = false;
 
 beingClimbed = false;
+
+diff = 0;
 </string>
           </argument>
         </arguments>
@@ -58,8 +60,18 @@ beingClimbed = false;
             <kind>1</kind>
             <string>if (tracking) {
     if (mouse_check_button(mb_left) &amp;&amp; !beingClimbed) {
-        x = mouse_x;
+        x += diff;
         x = clamp(x, left, right);
+        
+        diff = mouse_x - x;
+        
+        // Collisions 
+        if (place_meeting(x + diff, y, objFloor)) {
+            while(!place_meeting(x + sign(diff), y, objFloor)) {
+                diff += sign(diff);
+            }
+            //diff = 0;
+        }        
     } else {
         tracking = false;
     }
