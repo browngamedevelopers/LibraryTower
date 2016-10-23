@@ -11,6 +11,7 @@
     <sprite>sprites\sprBox</sprite>
     <sprite>sprites\sprPlayer</sprite>
     <sprite>sprites\sprStairs</sprite>
+    <sprite>sprites\sprLadder</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -22,6 +23,7 @@
     <object>objects\objFloor</object>
     <object>objects\objPlayer</object>
     <object>objects\objStairs</object>
+    <object>objects\objLadder</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room1</room>
