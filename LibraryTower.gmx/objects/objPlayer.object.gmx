@@ -57,8 +57,8 @@ onLadder = false;
             <string>// Get input 
 kLeft = -(keyboard_check(vk_left) || keyboard_check(ord('A'))); 
 kRight = keyboard_check(vk_right) || keyboard_check(ord('D')); 
-kJump = keyboard_check_pressed(vk_up) || keyboard_check(ord('W'));
-kDown = -(keyboard_check_pressed(vk_down) || keyboard_check(ord('S')));
+kJump = -(keyboard_check_pressed(vk_up) || keyboard_check(ord('W')));
+kDown = keyboard_check_pressed(vk_down) || keyboard_check(ord('S'));
 
 // Use input 
 move = kLeft + kRight; // 0 if both, -1 if left, 1 if right
@@ -66,14 +66,13 @@ vert = kJump + kDown; // 0 both, -1 down, 1 up
 
 if (onGround) {
     hsp += move * global.accel;
-    vsp = vert * -global.jumpPower;
+    vsp = vert * global.jumpPower;
     if (move == 0 &amp;&amp; hsp != 0) {
         hsp -= sign(hsp);
     }
 } else {
     if (onLadder) {
-        vsp = -(vert * global.climbSpeed);
-        //vsp = clamp(vsp, -global.climbSpeed, global.climbSpeed);
+        vsp = vert * global.climbSpeed;
         if (move != 0) {
             if (!place_meeting(x + (48 * move), y, objFloor)) {
                 x += 48 * move;
@@ -108,7 +107,7 @@ var ladder = instance_place(x + hsp, y, objLadder);
 if (ladder == noone) { 
     onLadder = false;
 } else {
-    if (vert &gt; 0) {
+    if (vert &lt; 0) {
         hsp = 0;
         x = ladder.x;
         onLadder = true;
