@@ -10,7 +10,7 @@
     <sprite>sprites\sprEnemy</sprite>
     <sprite>sprites\sprBox</sprite>
     <sprite>sprites\sprPlayer</sprite>
-    <sprite>sprites\sprLadder</sprite>
+    <sprite>sprites\sprStairs</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -21,7 +21,7 @@
     <object>objects\objEnemy</object>
     <object>objects\objFloor</object>
     <object>objects\objPlayer</object>
-    <object>objects\objLadder</object>
+    <object>objects\objStairs</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room1</room>
