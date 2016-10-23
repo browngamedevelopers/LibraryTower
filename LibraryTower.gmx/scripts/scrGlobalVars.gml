@@ -1,4 +1,6 @@
 global.grav = 1;
 
-global.xSpeed = 8;
-global.jumpPower = 16;
+global.accel = 2;
+global.maxSpeed = 12;
+global.jumpPower = 24;
+global.maxFallSpeed = 20;
