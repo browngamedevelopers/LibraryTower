@@ -58,6 +58,7 @@
     <instance objName="objFloor" x="640" y="720" name="inst_0F7A29F5" locked="0" code="" scaleX="3" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objFloor" x="352" y="960" name="inst_C25132FC" locked="0" code="" scaleX="3" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objFloor" x="1472" y="1280" name="inst_1CFF50D9" locked="0" code="" scaleX="30" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objStairs" x="1696" y="960" name="inst_71ED9294" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objLadder" x="1088" y="1184" name="inst_1DC13E01" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objLadder" x="1088" y="1088" name="inst_BEF7C0C7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objLadder" x="1088" y="992" name="inst_7418476F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

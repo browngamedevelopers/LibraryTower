@@ -31,7 +31,7 @@ vsp = 0;
 
 moving = false;
 onGround = false;
-onLadder = false;
+OnStairs = false;
 </string>
           </argument>
         </arguments>
@@ -60,6 +60,9 @@ kRight = keyboard_check(vk_right) || keyboard_check(ord('D'));
 kJump = -(keyboard_check_pressed(vk_up) || keyboard_check(ord('W')));
 kDown = keyboard_check_pressed(vk_down) || keyboard_check(ord('S'));
 
+
+    
+
 // Use input 
 move = kLeft + kRight; // 0 if both, -1 if left, 1 if right
 vert = kJump + kDown; // 0 both, -1 down, 1 up
@@ -84,13 +87,14 @@ if (onGround) {
     }
 }
 
-if (vsp &lt; global.maxFallSpeed &amp;&amp; !onLadder) { 
+if (vsp &lt; global.maxFallSpeed) { 
     vsp += global.grav;
 };
 
-// Set onGround based on collision with platform
+// If on top of platform
 if (place_meeting(x, y + 1, objFloor)) { 
     onGround = true;
+    vsp = kJump * -global.jumpPower;
 } else {
     onGround = false;
 }
@@ -99,7 +103,7 @@ if (place_meeting(x, y + 1, objFloor)) {
 if (place_meeting(x + hsp, y, objFloor)) { 
     while (!place_meeting(x + sign(hsp), y, objFloor)) { 
         x += sign(hsp); 
-    }
+    } 
     hsp = 0; 
 }
 
@@ -126,6 +130,21 @@ if (place_meeting(x, y + vsp, objFloor)) {
     vsp = 0; 
 } 
 y += vsp;
+
+//Player on stairs
+if (place_meeting(x+1,y, objStairs)) {
+    OnStairs = true;
+} else {
+    OnStaris = false;
+}
+
+if (OnStairs) {
+    while(keyboard_check(vk_right)) {
+    motion_set(45,288);
+    }   
+}
+
+
 </string>
           </argument>
         </arguments>
