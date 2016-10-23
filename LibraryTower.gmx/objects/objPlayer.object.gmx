@@ -31,6 +31,7 @@ vsp = 0;
 
 moving = false;
 onGround = false;
+onLadder = false;
 </string>
           </argument>
         </arguments>
@@ -66,29 +67,40 @@ if (onGround) {
     hsp += move; 
 }
 
-if (vsp &lt; global.maxFallSpeed) { 
+if (vsp &lt; global.maxFallSpeed &amp;&amp; !onLadder) { 
     vsp += global.grav;
 };
 
-// If on top of platform
+// Set onGround based on collision with platform
 if (place_meeting(x, y + 1, objFloor)) { 
     onGround = true;
-    vsp = kJump * -global.jumpPower;
 } else {
     onGround = false;
+}
+
+if (onGround) {
+    vsp = kJump * -global.jumpPower;
 }
 
 // H Collisions 
 if (place_meeting(x + hsp, y, objFloor)) { 
     while (!place_meeting(x + sign(hsp), y, objFloor)) { 
         x += sign(hsp); 
-    } 
+    }
     hsp = 0; 
-} 
+}
+
+if (place_meeting(x + hsp, y, objLadder)) { 
+    if (kJump &gt; 0) {
+        hsp = 0;
+        onLadder = true;
+        onGround = false;
+    }
+}
 
 // If player isn't pressing any l/r keys
 if (move == 0 &amp;&amp; hsp != 0) {
-    hsp -= sign(hsp) * global.accel;
+    hsp -= sign(hsp);
 }
 hsp = clamp(hsp, -global.maxSpeed, global.maxSpeed);
 x += hsp;
