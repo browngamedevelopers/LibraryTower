@@ -12,6 +12,7 @@
     <sprite>sprites\sprPlayer</sprite>
     <sprite>sprites\sprStairs</sprite>
     <sprite>sprites\sprLadder</sprite>
+    <sprite>sprites\sprElevator</sprite>
     <sprite>sprites\sprBookClosed</sprite>
     <sprite>sprites\sprBookOpenR</sprite>
     <sprite>sprites\sprBookOpen</sprite>
@@ -30,6 +31,7 @@
     <object>objects\objPlayer</object>
     <object>objects\objStairs</object>
     <object>objects\objLadder</object>
+    <object>objects\objElevator</object>
     <object>objects\objBookPlatform</object>
     <object>objects\objDoor</object>
     <object>objects\objBalcony</object>
