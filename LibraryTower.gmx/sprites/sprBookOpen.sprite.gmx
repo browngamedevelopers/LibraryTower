@@ -2,15 +2,15 @@
 <sprite>
   <type>0</type>
   <xorig>240</xorig>
-  <yorigin>144</yorigin>
-  <colkind>0</colkind>
+  <yorigin>-48</yorigin>
+  <colkind>1</colkind>
   <coltolerance>0</coltolerance>
-  <sepmasks>-1</sepmasks>
+  <sepmasks>0</sepmasks>
   <bboxmode>2</bboxmode>
   <bbox_left>0</bbox_left>
   <bbox_right>479</bbox_right>
-  <bbox_top>240</bbox_top>
-  <bbox_bottom>287</bbox_bottom>
+  <bbox_top>6</bbox_top>
+  <bbox_bottom>95</bbox_bottom>
   <HTile>0</HTile>
   <VTile>0</VTile>
   <TextureGroups>
@@ -18,7 +18,7 @@
   </TextureGroups>
   <For3D>0</For3D>
   <width>480</width>
-  <height>288</height>
+  <height>96</height>
   <frames>
     <frame index="0">images\sprBookOpen_0.png</frame>
   </frames>

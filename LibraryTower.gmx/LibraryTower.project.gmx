@@ -14,8 +14,10 @@
     <sprite>sprites\sprLadder</sprite>
     <sprite>sprites\sprBookClosed</sprite>
     <sprite>sprites\sprBookOpenR</sprite>
-    <sprite>sprites\sprBookOpenL</sprite>
     <sprite>sprites\sprBookOpen</sprite>
+    <sprite>sprites\sprDoor</sprite>
+    <sprite>sprites\sprBalcony</sprite>
+    <sprite>sprites\sprWall</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -29,7 +31,11 @@
     <object>objects\objStairs</object>
     <object>objects\objLadder</object>
     <object>objects\objBookPlatform</object>
+    <object>objects\objDoor</object>
+    <object>objects\objBalcony</object>
+    <object>objects\objWall</object>
   </objects>
+  <timelines name="timelines"/>
   <rooms name="rooms">
     <room>rooms\room1</room>
     <room>rooms\room0</room>
