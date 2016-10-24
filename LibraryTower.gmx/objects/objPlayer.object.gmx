@@ -35,6 +35,9 @@ onLadder = false;
 onStairs = false;
 onElevator = false;
 
+
+ladder = noone;
+
 </string>
           </argument>
         </arguments>
@@ -66,8 +69,6 @@ kDown = keyboard_check_pressed(vk_down) || keyboard_check(ord('S'));
 // Use input 
 move = kLeft + kRight; // 0 if both, -1 if left, 1 if right
 vert = kJump + kDown; // 0 both, -1 up, 1 down
-
-var ladder = instance_place(x + hsp, y, objLadder);
 
 if (onGround) {
     hsp += move * global.accel;
@@ -113,6 +114,7 @@ if (place_meeting(x, y + 1, objFloor)) {
 }
 
 // Ladder Collisions
+ladder = instance_place(x + hsp, y, objLadder);
 if (ladder == noone) { 
     onLadder = false;
 } else {
@@ -126,7 +128,7 @@ if (ladder == noone) {
 }
 
 // Stair Collisions
-var stair = instance_place(x + (2 * move), y - (2 * move), objStairs);
+var stair = instance_place(x + (hsp * move), y - hsp, objStairs);
 if (stair == noone) {
     onStairs = false;
 } else {
