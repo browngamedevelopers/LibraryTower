@@ -1,0 +1,1 @@
+global.canLadder = true;

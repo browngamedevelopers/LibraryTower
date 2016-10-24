@@ -53,9 +53,11 @@ target = room0;
             <string>kUp = keyboard_check_pressed(vk_up) || keyboard_check(ord('W'));
 
 if (place_meeting(x, y, objPlayer)) {
-    canOpen = !locked;
+    if (!locked) {
+        canOpen = true;
+    }
 } else {
-    canOpen = locked;
+    canOpen = false;
 }
 
 if (canOpen &amp;&amp; kUp) {

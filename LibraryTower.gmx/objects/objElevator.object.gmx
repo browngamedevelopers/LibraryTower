@@ -53,7 +53,6 @@ toClick = false;
             <kind>1</kind>
             <string>if (place_meeting(x,y,objPlayer)) {
     toClick = true;
-    show_debug_message("edfbedfv");
 } else {
     toClick = false;
     }
@@ -81,7 +80,7 @@ toClick = false;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (toClick) {
+            <string>if (toClick &amp;&amp; global.canLight) {
     global.Elevator = true
     }else {
     global.Elevator = false;

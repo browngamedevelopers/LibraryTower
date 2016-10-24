@@ -7,3 +7,8 @@ global.maxFallSpeed = 20;
 global.climbSpeed = 10;
 global.stairSpeed = 8;
 global.Elevator = false;
+
+global.dummy = false;
+global.canBook = false;
+global.canLadder = false;
+global.canLight = false;
