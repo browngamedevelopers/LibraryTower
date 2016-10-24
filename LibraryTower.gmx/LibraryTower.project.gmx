@@ -37,10 +37,10 @@
     <object>objects\objBalcony</object>
     <object>objects\objWall</object>
   </objects>
-  <timelines name="timelines"/>
   <rooms name="rooms">
     <room>rooms\room1</room>
     <room>rooms\room0</room>
+    <room>rooms\room2</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
