@@ -105,7 +105,7 @@ canOpen = true;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (canOpen) {
+            <string>if (canOpen &amp;&amp; global.canBook) {
     current += 1;
     current = current % 3;
     sprite_index = sprites[current];

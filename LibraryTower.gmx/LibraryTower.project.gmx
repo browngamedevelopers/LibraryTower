@@ -19,11 +19,16 @@
     <sprite>sprites\sprDoor</sprite>
     <sprite>sprites\sprBalcony</sprite>
     <sprite>sprites\sprWall</sprite>
+    <sprite>sprites\sprRailing</sprite>
+    <sprite>sprites\sprBookstand</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\scrGlobalVars.gml</script>
+    <script>scripts\scrBook.gml</script>
+    <script>scripts\scrLight.gml</script>
+    <script>scripts\scrLadder.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\objEnemy</object>
@@ -36,6 +41,9 @@
     <object>objects\objDoor</object>
     <object>objects\objBalcony</object>
     <object>objects\objWall</object>
+    <object>objects\objDetail</object>
+    <object>objects\objNPC</object>
+    <object>objects\objSpeech</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room1</room>

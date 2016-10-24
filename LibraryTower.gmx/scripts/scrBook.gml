@@ -1,0 +1,1 @@
+global.canBook = true;
