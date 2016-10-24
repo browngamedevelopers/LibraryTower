@@ -22,7 +22,9 @@
     <sprite>sprites\sprRailing</sprite>
     <sprite>sprites\sprBookstand</sprite>
   </sprites>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <background>background\background0</background>
+  </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\scrGlobalVars.gml</script>
@@ -48,6 +50,7 @@
   <rooms name="rooms">
     <room>rooms\room1</room>
     <room>rooms\room0</room>
+    <room>rooms\lobby</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

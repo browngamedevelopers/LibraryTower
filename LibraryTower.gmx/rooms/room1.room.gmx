@@ -139,7 +139,7 @@
     <instance objName="objBalcony" x="2752" y="800" name="inst_8B859422" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBalcony" x="2848" y="800" name="inst_DA8EB7A8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBalcony" x="2944" y="800" name="inst_C40F0C61" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objDoor" x="2944" y="658" name="inst_B76ED890" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objDoor" x="2944" y="658" name="inst_B76ED890" locked="0" code="target = lobby;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objWall" x="3040" y="736" name="inst_69AB8F8E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objWall" x="3040" y="640" name="inst_A6B7765C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objWall" x="3040" y="544" name="inst_1C26A0D7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -174,6 +174,8 @@
     <instance objName="objDetail" x="2848" y="704" name="inst_A6802BEA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objDetail" x="2944" y="704" name="inst_5B28995F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objNPC" x="640" y="1184" name="inst_5812A664" locked="0" code="theScript = scrLadder;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objDoor" x="239" y="1137" name="inst_139FF4BF" locked="0" code="target = lobby;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objNPC" x="1408" y="384" name="inst_C4159880" locked="0" code="theScript = scrBook;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
