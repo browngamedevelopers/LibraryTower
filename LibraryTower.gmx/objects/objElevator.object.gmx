@@ -25,10 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>script_execute(scrGlobalVars);
-
-
-toClick = false;
+            <string>toClick = false;
 </string>
           </argument>
         </arguments>
@@ -55,7 +52,7 @@ toClick = false;
     toClick = true;
 } else {
     toClick = false;
-    }
+}
     
 
 </string>

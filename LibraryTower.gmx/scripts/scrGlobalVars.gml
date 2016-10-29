@@ -2,13 +2,16 @@ global.grav = 1;
 
 global.accel = 2;
 global.maxSpeed = 12;
-global.jumpPower = 12;
+global.jumpPower = 16;
 global.maxFallSpeed = 20;
 global.climbSpeed = 10;
 global.stairSpeed = 8;
-global.Elevator = false;
+global.elevator = false;
 
 global.dummy = false;
 global.canBook = false;
 global.canLadder = false;
 global.canLight = false;
+
+global.spawnX = 48;
+global.spawnY = 336;

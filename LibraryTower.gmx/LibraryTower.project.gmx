@@ -9,7 +9,7 @@
     <sprite>sprites\sprFloor</sprite>
     <sprite>sprites\sprEnemy</sprite>
     <sprite>sprites\sprBox</sprite>
-    <sprite>sprites\sprPlayer</sprite>
+    <sprite>sprites\sprPlayerWalk</sprite>
     <sprite>sprites\sprStairs</sprite>
     <sprite>sprites\sprLadder</sprite>
     <sprite>sprites\sprElevator</sprite>
@@ -21,9 +21,14 @@
     <sprite>sprites\sprWall</sprite>
     <sprite>sprites\sprRailing</sprite>
     <sprite>sprites\sprBookstand</sprite>
+    <sprite>sprites\sprDesk</sprite>
+    <sprite>sprites\sprLadderRail</sprite>
   </sprites>
   <backgrounds name="background">
-    <background>background\background0</background>
+    <background>background\lobby</background>
+    <background>background\bookroom</background>
+    <background>background\mainroom</background>
+    <background>background\ladderroom</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -33,7 +38,7 @@
     <script>scripts\scrLadder.gml</script>
   </scripts>
   <objects name="objects">
-    <object>objects\objEnemy</object>
+    <object>objects\objSetup</object>
     <object>objects\objFloor</object>
     <object>objects\objPlayer</object>
     <object>objects\objStairs</object>
@@ -43,14 +48,18 @@
     <object>objects\objDoor</object>
     <object>objects\objBalcony</object>
     <object>objects\objWall</object>
-    <object>objects\objDetail</object>
+    <object>objects\objForeground</object>
     <object>objects\objNPC</object>
     <object>objects\objSpeech</object>
+    <object>objects\objBackground</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\lv1_lobby</room>
+    <room>rooms\lv1_mainroom</room>
+    <room>rooms\lv1_ladderroom</room>
+    <room>rooms\lv1_bookroom</room>
     <room>rooms\room1</room>
     <room>rooms\room0</room>
-    <room>rooms\lobby</room>
     <room>rooms\room2</room>
   </rooms>
   <help>

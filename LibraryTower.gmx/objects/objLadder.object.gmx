@@ -29,8 +29,6 @@
 startpos = y - (sprite_height / 2);
 endpos = y + (sprite_height / 2);
 
-left = x - 288;
-right = x + 288;
 tracking = false;
 
 beingClimbed = false;
@@ -61,7 +59,6 @@ diff = 0;
             <string>if (tracking) {
     if (mouse_check_button(mb_left) &amp;&amp; !beingClimbed) {
         x += diff;
-        x = clamp(x, left, right);
         
         diff = mouse_x - x;
         
