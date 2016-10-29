@@ -23,6 +23,7 @@
     <sprite>sprites\sprBookstand</sprite>
     <sprite>sprites\sprDesk</sprite>
     <sprite>sprites\sprLadderRail</sprite>
+    <sprite>sprites\sprPlayerIdle</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\lobby</background>
