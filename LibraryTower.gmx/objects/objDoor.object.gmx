@@ -30,8 +30,8 @@ stayLocked = false;
 canOpen = false;
 target = room0;
 text = "";
-spawnX = 0;
-spawnY = 0;
+spawnX = 432;
+spawnY = 192;
 
 alarm[0] = 1.5 * room_speed;
 </string>

@@ -27,6 +27,9 @@
             <kind>1</kind>
             <string>startpos = y - (sprite_height / 2);
 endpos = y + (sprite_height / 2);
+
+image_index = 0;
+image_speed = 0;
 </string>
           </argument>
         </arguments>
@@ -50,7 +53,7 @@ endpos = y + (sprite_height / 2);
           <argument>
             <kind>1</kind>
             <string>for(i = startpos; i &lt; endpos; i += 96) {
-    draw_sprite(sprWall, 0, x, i + 48);
+    draw_sprite(sprWall, image_index, x, i + 48);
 }
 </string>
           </argument>

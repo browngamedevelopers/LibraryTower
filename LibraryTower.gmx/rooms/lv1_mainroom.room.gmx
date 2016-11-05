@@ -120,7 +120,6 @@
     <instance objName="objForeground" x="2736" y="1104" name="inst_D169B57A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objForeground" x="2832" y="1104" name="inst_47A2842E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objForeground" x="2928" y="1104" name="inst_10180ED9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objDoor" x="2928" y="1440" name="inst_743D894E" locked="0" code="target = lv1_ladderroom;&#xA;&#xA;//spawnX = 432;&#xA;//spawnY = 140;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objDoor" x="2928" y="1056" name="inst_20535A17" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBookPlatform" x="2544" y="1104" name="inst_B410F25E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="180"/>
     <instance objName="objWall" x="3024" y="816" name="inst_0CACEF57" locked="0" code="" scaleX="1" scaleY="17" colour="4294967295" rotation="0"/>
@@ -176,7 +175,7 @@
     <instance objName="objBalcony" x="2928" y="432" name="inst_1D91CBF3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBalcony" x="2928" y="336" name="inst_BE57C66E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBalcony" x="2832" y="336" name="inst_C97A02AD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objDoor" x="2880" y="192" name="inst_B4734239" locked="0" code="target = lv1_bookroom;&#xA;&#xA;spawnX = 48;&#xA;spawnY = 96;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objDoor" x="2880" y="192" name="inst_B4734239" locked="0" code="target = lv1_bookroom;&#xA;&#xA;spawnX = 48;&#xA;spawnY = 96;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objForeground" x="2640" y="336" name="inst_9FFE4288" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objForeground" x="2736" y="336" name="inst_50230308" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objForeground" x="2832" y="240" name="inst_68593C72" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -216,6 +215,7 @@
     <instance objName="objBackground" x="912" y="192" name="inst_C87C00D9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objWall" x="1008" y="144" name="inst_5763F2B5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objForeground" x="1488" y="240" name="inst_B757E361" locked="0" code="mySprite = sprChandelier;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objDoor" x="2928" y="1440" name="inst_AA443964" locked="0" code="target = lv1_ladderroom;&#xA;&#xA;spawnX = 480;&#xA;spawnY = 150;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

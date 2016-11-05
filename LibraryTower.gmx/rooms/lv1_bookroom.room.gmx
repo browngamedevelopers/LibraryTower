@@ -53,7 +53,7 @@
   <instances>
     <instance objName="objBalcony" x="144" y="240" name="inst_732E323E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBalcony" x="48" y="240" name="inst_7080F525" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objDoor" x="48" y="96" name="inst_8FEE3131" locked="0" code="target = lv1_mainroom;&#xA;&#xA;spawnX = 2880;&#xA;spawnY = 192;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objDoor" x="48" y="96" name="inst_8FEE3131" locked="0" code="target = lv1_mainroom;&#xA;&#xA;spawnX = 2880;&#xA;spawnY = 192;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objForeground" x="48" y="144" name="inst_3689C936" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objForeground" x="144" y="144" name="inst_BFE811EA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBookPlatform" x="336" y="336" name="inst_6CEA9B37" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
