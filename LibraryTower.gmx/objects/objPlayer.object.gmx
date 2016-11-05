@@ -137,8 +137,8 @@ if (onGround) {
 if (place_meeting(x, y + 1, objFloor)) { 
     if(!onGround) {
         onGround = true;
-        image_start = 112;
-        image_end = 119;
+        image_start = 0;
+        image_end = 48;
     }
 } else {
     if(onGround) {

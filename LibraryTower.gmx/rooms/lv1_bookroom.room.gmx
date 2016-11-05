@@ -83,12 +83,12 @@
     <instance objName="objFloor" x="1776" y="720" name="inst_589CDB44" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objFloor" x="1680" y="816" name="inst_648064A6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objFloor" x="1584" y="912" name="inst_C15F4DE1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objWall" x="2064" y="864" name="inst_38ECB8DB" locked="0" code="" scaleX="1" scaleY="4" colour="4294967295" rotation="0"/>
-    <instance objName="objWall" x="1968" y="864" name="inst_5DC42C75" locked="0" code="" scaleX="1" scaleY="4" colour="4294967295" rotation="0"/>
-    <instance objName="objWall" x="1872" y="864" name="inst_8342033F" locked="0" code="" scaleX="1" scaleY="4" colour="4294967295" rotation="0"/>
-    <instance objName="objWall" x="1776" y="912" name="inst_21869FE9" locked="0" code="" scaleX="1" scaleY="3" colour="4294967295" rotation="0"/>
-    <instance objName="objWall" x="1680" y="960" name="inst_C3C5A802" locked="0" code="" scaleX="1" scaleY="2" colour="4294967295" rotation="0"/>
-    <instance objName="objWall" x="1584" y="1008" name="inst_B8D56411" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objWall" x="2064" y="864" name="inst_38ECB8DB" locked="0" code="image_index = 1;&#xA;" scaleX="1" scaleY="4" colour="4294967295" rotation="0"/>
+    <instance objName="objWall" x="1968" y="864" name="inst_5DC42C75" locked="0" code="image_index = 1;&#xA;" scaleX="1" scaleY="4" colour="4294967295" rotation="0"/>
+    <instance objName="objWall" x="1872" y="864" name="inst_8342033F" locked="0" code="image_index = 1;&#xA;" scaleX="1" scaleY="4" colour="4294967295" rotation="0"/>
+    <instance objName="objWall" x="1776" y="912" name="inst_21869FE9" locked="0" code="image_index = 1;&#xA;" scaleX="1" scaleY="3" colour="4294967295" rotation="0"/>
+    <instance objName="objWall" x="1680" y="960" name="inst_C3C5A802" locked="0" code="image_index = 1;&#xA;" scaleX="1" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="objWall" x="1584" y="1008" name="inst_B8D56411" locked="0" code="image_index = 1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objNPC" x="1968" y="528" name="inst_52CE6828" locked="0" code="theScript = scrBook;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objWall" x="1488" y="144" name="inst_FCE035BF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objWall" x="-48" y="528" name="inst_90A61117" locked="0" code="" scaleX="1" scaleY="11" colour="4294967295" rotation="0"/>
