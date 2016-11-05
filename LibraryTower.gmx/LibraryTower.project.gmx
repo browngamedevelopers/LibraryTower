@@ -23,7 +23,9 @@
     <sprite>sprites\sprBookstand</sprite>
     <sprite>sprites\sprDesk</sprite>
     <sprite>sprites\sprLadderRail</sprite>
-    <sprite>sprites\sprPlayerIdle</sprite>
+    <sprite>sprites\sprPlayer</sprite>
+    <sprite>sprites\sprCarpetbar</sprite>
+    <sprite>sprites\sprChandelier</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\lobby</background>
@@ -53,6 +55,7 @@
     <object>objects\objNPC</object>
     <object>objects\objSpeech</object>
     <object>objects\objBackground</object>
+    <object>objects\objLadderFloor</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\lv1_lobby</room>
