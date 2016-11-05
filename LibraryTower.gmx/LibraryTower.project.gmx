@@ -7,8 +7,6 @@
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprite>sprites\sprFloor</sprite>
-    <sprite>sprites\sprEnemy</sprite>
-    <sprite>sprites\sprBox</sprite>
     <sprite>sprites\sprStairs</sprite>
     <sprite>sprites\sprLadder</sprite>
     <sprite>sprites\sprElevator</sprite>
@@ -28,6 +26,7 @@
     <sprite>sprites\sprNewgame</sprite>
     <sprite>sprites\sprContinue</sprite>
     <sprite>sprites\sprInformation</sprite>
+    <sprite>sprites\sprDust</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\lobby</background>
@@ -63,6 +62,7 @@
     <object>objects\objNewGame</object>
     <object>objects\objContinue</object>
     <object>objects\objInformation</object>
+    <object>objects\objDust</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Opening_Menu</room>
