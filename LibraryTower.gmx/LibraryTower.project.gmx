@@ -9,7 +9,6 @@
     <sprite>sprites\sprFloor</sprite>
     <sprite>sprites\sprEnemy</sprite>
     <sprite>sprites\sprBox</sprite>
-    <sprite>sprites\sprPlayerWalk</sprite>
     <sprite>sprites\sprStairs</sprite>
     <sprite>sprites\sprLadder</sprite>
     <sprite>sprites\sprElevator</sprite>
@@ -26,12 +25,17 @@
     <sprite>sprites\sprPlayer</sprite>
     <sprite>sprites\sprCarpetbar</sprite>
     <sprite>sprites\sprChandelier</sprite>
+    <sprite>sprites\sprNewgame</sprite>
+    <sprite>sprites\sprContinue</sprite>
+    <sprite>sprites\sprInformation</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\lobby</background>
     <background>background\bookroom</background>
     <background>background\mainroom</background>
     <background>background\ladderroom</background>
+    <background>background\Menu</background>
+    <background>background\ladderroom2</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -56,8 +60,12 @@
     <object>objects\objSpeech</object>
     <object>objects\objBackground</object>
     <object>objects\objLadderFloor</object>
+    <object>objects\objNewGame</object>
+    <object>objects\objContinue</object>
+    <object>objects\objInformation</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\Opening_Menu</room>
     <room>rooms\lv1_lobby</room>
     <room>rooms\lv1_mainroom</room>
     <room>rooms\lv1_ladderroom</room>
