@@ -25,11 +25,11 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>accel = 0.01;
+            <string>accel = 0.002;
 spd = 0;
 dir = 1;
 
-alarm[0] = 5 * room_speed;
+alarm[0] = 10 * room_speed;
 </string>
           </argument>
         </arguments>
@@ -53,7 +53,7 @@ alarm[0] = 5 * room_speed;
           <argument>
             <kind>1</kind>
             <string>dir = dir * -1;
-alarm[0] = 5 * room_speed;
+alarm[0] = 10 * room_speed;
 </string>
           </argument>
         </arguments>
@@ -77,7 +77,7 @@ alarm[0] = 5 * room_speed;
           <argument>
             <kind>1</kind>
             <string>spd += dir * accel;
-spd = clamp(spd, -0.1, 0.1);
+spd = clamp(spd, -0.06, 0.06);
 
 x += spd;
 </string>

@@ -121,7 +121,7 @@
     <instance objName="objForeground" x="2832" y="1104" name="inst_47A2842E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objForeground" x="2928" y="1104" name="inst_10180ED9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objDoor" x="2928" y="1056" name="inst_20535A17" locked="0" code="target = Opening_Menu;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBookPlatform" x="2544" y="1104" name="inst_B410F25E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="180"/>
+    <instance objName="objBookPlatform" x="2496" y="1104" name="inst_B410F25E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="180"/>
     <instance objName="objWall" x="3024" y="816" name="inst_0CACEF57" locked="0" code="" scaleX="1" scaleY="17" colour="4294967295" rotation="0"/>
     <instance objName="objPlayer" x="432" y="1440" name="inst_7412CB37" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBalcony" x="336" y="816" name="inst_9D8944EE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
