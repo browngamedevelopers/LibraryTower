@@ -58,6 +58,7 @@
     <object>objects\objForeground</object>
     <object>objects\objNPC</object>
     <object>objects\objSpeech</object>
+    <object>objects\objSpeechbook</object>
     <object>objects\objBackground</object>
     <object>objects\objLadderFloor</object>
     <object>objects\objNewGame</object>
