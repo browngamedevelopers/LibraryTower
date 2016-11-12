@@ -31,6 +31,7 @@ sprites[2] = sprBookOpen;
 current = 0;
 
 canOpen = true;
+mask = noone;
 </string>
           </argument>
         </arguments>
@@ -109,6 +110,16 @@ canOpen = true;
     current += 1;
     current = current % 3;
     sprite_index = sprites[current];
+    if (current == 1) {
+        mask = instance_create(x, y, objCollide);
+        with (mask) {
+            image_yscale = 3.00;
+        }
+    } else if (current == 2) {
+        with (mask) {
+            instance_destroy();
+        }
+    }
 }
 </string>
           </argument>

@@ -25,7 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string></string>
+            <string>var music = audio_play_sound(mscMenu, 1, true);
+audio_sound_gain(music, 0.7, 0);
+</string>
           </argument>
         </arguments>
       </action>

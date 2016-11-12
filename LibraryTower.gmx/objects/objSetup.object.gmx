@@ -28,6 +28,10 @@
             <string>script_execute(scrGlobalVars);
 
 instance_create(global.spawnX, global.spawnY, objPlayer);
+
+audio_stop_sound(mscMenu);
+var music = audio_play_sound(mscGameplay, 1, true);
+audio_sound_gain(music, 0.7, 0);
 </string>
           </argument>
         </arguments>

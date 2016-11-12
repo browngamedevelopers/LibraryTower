@@ -42,7 +42,10 @@ self.y = global.spawnY;
 image_index = 0;
 image_start = 0;
 image_end = 47;
-image_lag = 0;
+
+foots = audio_play_sound(sndFootsteps, 0, true);
+audio_sound_gain(foots, 1, 0);
+audio_pause_sound(foots);
 </string>
           </argument>
         </arguments>
@@ -81,6 +84,7 @@ if (onGround) {
     hsp += move * global.accel;
     vsp = vert * global.jumpPower;
     if (move == 0) {
+        audio_pause_sound(foots);
         if (hsp != 0) { // COMING TO A HALT
             image_start = 48;
             image_end = 72;
@@ -90,6 +94,7 @@ if (onGround) {
             image_end = 48;
         }
     } else { // WALKING
+        audio_resume_sound(foots);
         image_xscale = move;
         image_start = 48;
         image_end = 72;
@@ -97,11 +102,17 @@ if (onGround) {
 } else {
     if (onLadder) { // ON LADDER
         vsp = vert * global.climbSpeed;
+        if (vert != 0) {
+            audio_resume_sound(foots);
+        } else {
+            audio_pause_sound(foots);
+        }
         image_start = 72;
         image_end = 96;
         image_speed = abs(vert);
         if (move != 0) { // GETTING OFF LADDER
             if (!place_meeting(x + (48 * move), y, objFloor)) {
+                audio_pause_sound(foots);
                 image_xscale = move;
                 image_start = 105;
                 image_end = 107;
@@ -118,6 +129,7 @@ if (onGround) {
     }
     
     if (!onLadder &amp;&amp; !onStairs) { // FALLING
+        audio_pause_sound(foots);
         vsp += global.grav;
         hsp += move / 2;
         if (vsp &gt;= 0) { // Freefall
@@ -136,6 +148,7 @@ if (onGround) {
 // Check if on top of platform
 if (place_meeting(x, y + 1, objFloor)) { 
     if(!onGround) {
+        audio_resume_sound(foots);
         onGround = true;
         image_start = 0;
         image_end = 48;

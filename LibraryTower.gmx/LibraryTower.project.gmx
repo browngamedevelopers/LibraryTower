@@ -4,7 +4,11 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\sndFootsteps</sound>
+    <sound>sound\mscMenu</sound>
+    <sound>sound\mscGameplay</sound>
+  </sounds>
   <sprites name="sprites">
     <sprite>sprites\sprFloor</sprite>
     <sprite>sprites\sprStairs</sprite>
@@ -27,6 +31,7 @@
     <sprite>sprites\sprContinue</sprite>
     <sprite>sprites\sprInformation</sprite>
     <sprite>sprites\sprDust</sprite>
+    <sprite>sprites\sprCollide</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\lobby</background>
@@ -64,6 +69,7 @@
     <object>objects\objContinue</object>
     <object>objects\objInformation</object>
     <object>objects\objDust</object>
+    <object>objects\objCollide</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Opening_Menu</room>
