@@ -1,8 +1,8 @@
-global.grav = 1;
+global.grav = 1.5;
 
 global.accel = 2;
 global.maxSpeed = 12;
-global.jumpPower = 16;
+global.jumpPower = 20;
 global.maxFallSpeed = 20;
 global.climbSpeed = 10;
 global.stairSpeed = 8;

@@ -156,12 +156,17 @@ if (place_meeting(x, y + 1, objFloor)) {
 } else {
     if(onGround) {
         onGround = false;
+        audio_pause_sound(foots);
         if (move != 0) {
             image_xscale = move;
         }
         image_start = 96;
         image_end = 108;
     }
+}
+
+if (ladder != noone) {
+    ladder.beingClimbed = false;
 }
 
 // Ladder Collisions

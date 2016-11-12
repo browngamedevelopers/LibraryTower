@@ -26,8 +26,11 @@
           <argument>
             <kind>1</kind>
             <string>canTalk = false;
+activated = false;
 
 theScript = scrGlobalVars;
+
+speech = noone;
 </string>
           </argument>
         </arguments>
@@ -50,23 +53,32 @@ theScript = scrGlobalVars;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>kUp = keyboard_check_pressed(vk_up) || keyboard_check(ord('W'));
-ML = mouse_check_button_pressed(mb_left);
-
-if (place_meeting(x, y, objPlayer)) {
-    canTalk = true;
-} else {
-    canTalk = false;
-}
-
-//if (canTalk &amp;&amp; kUp) {
-    //script_execute(theScript);
-    //instance_create(x, y - 48, objSpeech);
-//}
-
-if (canTalk &amp;&amp; ML) {
-    script_execute(theScript);
-    //instance_create(x, y - 48, objSpeech);
+            <string>if (activated == false) {
+    kUp = keyboard_check_pressed(vk_up) || keyboard_check(ord('W'));
+    ML = mouse_check_button_pressed(mb_left);
+    
+    if (place_meeting(x, y, objPlayer)) {
+        canTalk = true;
+        if (speech == noone) {
+            speech = instance_create(x - 100, y - 100, objSpeech);
+        }
+    } else {
+        canTalk = false;
+        if (speech != noone) {
+            with(speech) {
+                instance_destroy();
+            }
+            speech = noone;
+        }
+    }
+    
+    if (canTalk &amp;&amp; ML) {
+        script_execute(theScript);
+        with(speech) {
+            instance_destroy();
+        }
+        activated = true;
+    }
 }
 </string>
           </argument>
